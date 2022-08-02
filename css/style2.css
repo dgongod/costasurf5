@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #79f28f, #5fc86a, #459f48, #2a7927, #0c5404);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.container-grid{
+    display: grid;    
+    grid-template-areas: 
+                "menu header"
+                "menu content"
+                "menu footer";
+    grid-template-columns: 0.5fr 3.5fr;
+    grid-template-rows: auto 100vh auto;
+}
+
+/* menu */
+.menu{
+    grid-area: menu;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+
+    background-color: rgb(52,52,52);
+    color: white;
+}
+
+header{
+    grid-area: header;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url(../images/background-header.jpg); 
+    background-size: cover;
+
+    color: white;
+    height: 60px;
+    width: 100%;
+
+    text-shadow: 0 0 8px white;
+    font-style: italic;
+}
+
+img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* menu logo */
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-bottom: 1px solid white;
+}
+
+.logo a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 70%;
+    padding: 10px;
+}
+
+.logo img{    
+    width: 100%;
+}
+/* --- */
+
+/* items */
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 0 10px;
+    border-bottom: 1px solid white;
+}
+
+.item a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    
+    width: 100%;
+}
+
+.item a:hover{
+    background-color: rgba(222, 159, 58, 0.8);/* rgb(184, 117, 9);*/
+    transition: 0.7s;
+    box-shadow: 0 0 4px white;
+    font-weight: bold;
+    color: black;
+
+    width: 100%;
+}
+
+.icon-menu, .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 14px;    
+    padding: 8px;
+    width: 40px;
+}
+
+.title{
+    justify-content: start;
+    width: 60%;
+}
+
+.icon-menu img{
+    width: 100%;
+    margin-left: 15px;    
+}
+
+.icon-menu img:hover{
+    transition: 0.6s;
+    opacity: 0.9;
+    filter: invert(1) hue-rotate(180deg) contrast(2);
+}
+/* --- */
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{    
+    padding: 6px;    
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+
+    margin-top: 20px;
+}
+
+.inputsearch{    
+    width: 80%;
+}
+
+/* iconos footer */
+.icon-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 10px;
+    width: 40px;
+}
+/* --- */
+
+footer{
+    grid-area: footer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../images/background-footer.jpg); 
+    background-size: cover;
+
+    color: white;
+    
+    height: 50px;
+    font-size: 12px;
+}
+
+footer a{
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+    margin: 5%;
+}
+
+.color-ivertido{
+    /* filtro para invertir colores */
+    filter: invert(1) hue-rotate(180deg) contrast(2);
+}
+
+.content{
+    grid-area: content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    text-align: justify;
+}
+
+/* index */
+.parrafo{
+    text-align: justify;
+    margin: 20px;
+    color: white;
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
+    border-color: black;
+}
+
+.iframes-index{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.iframes-index p{
+    color: white;
+}
+
+.item-iframe{
+    padding: 30px;
+}
+
+.item-iframe iframe{
+    width: 500px;
+    height: 300px;    
+}
+
+main{
+    height: 90vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* page nosotros*/
+.images-nosotros{
+    display: grid;
+    grid-template-areas: 
+                "canchas        canchas"
+                "video          video";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    height: 80%;    
+
+    justify-items: center;
+}
+
+.canchas{
+    position: relative;
+
+    object-fit: cover;
+    width: 70%;
+    height: 40%;
+    border: 30px solid;
+
+    border-image-source: url(../images/marco-img1.jpg);
+    border-image-slice: 100;
+    border-image-repeat: stretch;
+    border-image-outset: 3px;
+    background-color: rgb(52, 52, 52);
+    border-radius: 10px;
+
+    transition: 0.6s;
+}
+
+video{
+    grid-area: video;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+    border: 5px solid;
+    background-color: rgb(52, 52, 52);
+
+    /*
+    grid-area: video-nosotros;
+    position: relative;
+
+    width: 80%;
+    height: 40%;
+
+    border: 5px solid;
+    background-color: rgb(52, 52, 52);*/
+}
+
+/* contacto */
+.form-contacto{
+    float: left;
+    /*
+    background-color: rgb(137, 137, 137);
+    border-radius: 10px;
+    border: 1px solid;
+    */
+    padding: 30px;    
+    color: white;    
+    border-color: black;    
+    width: 100%;
+    border-bottom: 1px solid;
+    border-color: rgb(52, 52, 52);
+}
+
+.label-contacto{
+    float: left;
+    text-align: right;
+    width: 200px;    
+    margin-top: 4px;
+}
+
+.text-btn-contacto{
+    float: left;    
+    width: 300px;
+    text-align: left;    
+    margin-left: 5px;
+}
+
+.text-btn-contacto textarea,
+.text-btn-contacto input[type=text]{    
+    margin: 0 5px;
+    width: 290px;
+    background-color: white;
+    border-color: rgb(52, 52, 52);
+    border-width: 1px;
+    
+}
+
+.text-btn-contacto textarea{    
+    margin: 5px 5px;
+}
+
+.text-btn-contacto input[type=submit],
+.text-btn-contacto input[type=reset]{    
+    margin: 0 5px;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(52, 52, 52);
+    color: white;
+    cursor: pointer;
+}
+
+.text-btn-contacto input[type=submit]:hover,
+.text-btn-contacto input[type=reset]:hover{    
+    margin: 0 5px;
+    width: 80px;
+    background-color: rgba(222, 159, 58, 0.8);
+    color: white;
+    cursor: pointer;
+}
+
+.pie-contacto{
+    float: left;
+    padding-left: 16%;
+    width: 100%;
+}
+
+.parrafo-contacto{
+    float: left;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.iframe-contacto{
+    float: left;
+    margin-top: 25px;
+}
+
+.iframe-contacto iframe{
+    float: left;
+    width: 530px;
+    height: 330px;
+}
+
+/* escuelita */
+table{
+    background-color: white;
+    border-style: ridge;
+    border: 1px solid #000;
+    text-align: center;
+    margin: 10px auto;
+}
+
+th, td, tr {
+    width: 15%;
+    text-align: center;    
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.6em;
+ }
+
+ th {
+    color: #fff;
+    background: rgb(52, 52, 52);
+ }
+
+ .parrafo-profesores{
+    text-align: center;
+    padding-bottom: 18px;
+    border-bottom: 1px solid;
+ }
+
+.images-escuelita, .images-galeria{
+    text-align: center;
+    padding: 10px;    
+}
+
+.images-escuelita img{
+    width: 350px;
+    height: 250px;
+    margin: 15px;
+    border: 30px solid;
+    object-fit: cover;
+
+    border-image-source: url(../images/marco-img1.jpg);
+    border-image-slice: 100;
+    border-image-repeat: stretch;
+    border-image-outset: 3px;
+    background-color: rgb(52, 52, 52);
+    border-radius: 10px;
+
+    transition: 0.6s;
+}
+
+/* galerias */
+.images-galeria img{
+    width: 400px;
+    height: 300px;
+    margin: 15px;
+    border: 30px solid;
+    object-fit: cover;
+
+    border-image-source: url(../images/marco-img1.jpg);
+    border-image-slice: 100;
+    border-image-repeat: stretch;
+    border-image-outset: 3px;
+    background-color: rgb(52, 52, 52);
+    border-radius: 10px;
+    
+    transition: 0.6s;
+}
+
+/* responsive */
+/* tamaño mobile */
+@media (max-width:767px){    
+    /* index */
+    .iframes-index{
+        flex-direction: column;
+    }
+        
+    .item-iframe iframe{
+        width: 400px;
+        height: 200px;    
+    }
+
+    /* menu */
+    .icon-menu img{
+        margin-left: 8px;
+    }
+    
+    .title{
+        font-size: 11px;    
+        width: 60%;
+        justify-content: flex-start;
+    }
+
+    /* nosotros */
+    .images-nosotros{
+        grid-template-areas: 
+                    "canchas"
+                    "canchas";
+        grid-template-columns: 1fr;
+        
+        height: 680px;
+        width: 400px;    
+    
+        justify-items: center;
+    }
+
+    footer{
+        height: fit-content;
+    }
+
+    .canchas{
+        width: 90%;
+        height: 60%;
+        margin-left: 25%;
+        border: 20px solid;
+    
+        border-image-source: url(../images/marco-img1.jpg);
+        border-image-slice: 100;
+        border-image-repeat: stretch;
+        border-image-outset: 3px;
+        background-color: rgb(52, 52, 52);
+        border-radius: 10px;
+    
+        transition: 0.6s;
+    }
+
+    
+    /* galerias */
+    .images-galeria img{
+        width: 350px;
+        height: 220px;
+        margin: 15px;
+        border: 20px solid;
+    
+        border-image-source: url(../images/marco-img1.jpg);
+        border-image-slice: 100;
+        border-image-repeat: stretch;
+        border-image-outset: 3px;
+        background-color: rgb(52, 52, 52);
+        border-radius: 10px;
+        
+        transition: 0.6s;
+    }
+
+    /* escuelita */
+    table{
+        background-color: white;
+        border-style: ridge;
+        border: 1px solid #000;
+        text-align: center;
+        margin: 5px 5px;
+    }
+    
+    th, td, tr {
+        width: 3%;
+        padding: 5px;
+
+        font-size: 12px;
+     }
+    
+     .parrafo-profesores{
+        text-align: center;
+        padding-bottom: 18px;
+        border-bottom: 1px solid;
+        font-size: 14px;
+        font-weight: bold;
+     }
+    
+    .images-escuelita, .images-galeria{
+        text-align: center;
+        padding: 10px;    
+    }
+    
+    .images-escuelita img{
+        width: 380px;
+        height: 230px;
+        border: 20px solid;
+    
+        border-image-source: url(../images/marco-img1.jpg);
+        border-image-slice: 100;
+        border-image-repeat: stretch;
+        border-image-outset: 3px;
+        background-color: rgb(52, 52, 52);
+        border-radius: 10px;
+    
+        transition: 0.6s;
+    }
+
+    /* contacto */
+    .form-contacto{
+        display: flex;
+        justify-content: center;
+
+        color: white;    
+        border-color: black;    
+        width: 83%;
+        border-bottom: none;        
+    }
+    
+    .label-contacto{
+        font-size: 14px;
+    }
+        
+    .pie-contacto{
+        padding-left: 10%;
+        width: 80%;
+    }
+    
+    .parrafo-contacto{
+        margin-top: 10px;
+    }
+    
+    .iframe-contacto{
+        margin-top: 5px;
+    }
+    
+    .iframe-contacto iframe{
+        width: 380px;
+        height: 230px;
+    }
+}
+
+/*tamaño de tablet*/
+@media (min-width:768px) and (max-width:1023px){    
+    
+    /* index */
+    .iframes-index{
+        flex-direction: row;
+    }
+        
+    .item-iframe iframe{
+        width: 380px;
+        height: 200px;    
+    }
+
+    /* nosotros */
+    .images-nosotros img{
+        height: 300px;
+        width: 380px;
+        
+        border: 20px solid;
+
+        border-image-source: url(../images/marco-img1.jpg);
+        border-image-slice: 100;
+        border-image-repeat: stretch;
+        border-image-outset: 3px;
+        background-color: rgb(52, 52, 52);
+        border-radius: 10px;
+        
+        transition: 0.6s;
+    }
+
+    /* galerias */
+    .images-galeria img{
+        width: 350px;
+        height: 220px;
+        margin: 15px;
+        border: 20px solid;
+    
+        border-image-source: url(../images/marco-img1.jpg);
+        border-image-slice: 100;
+        border-image-repeat: stretch;
+        border-image-outset: 3px;
+        background-color: rgb(52, 52, 52);
+        border-radius: 10px;
+        
+        transition: 0.6s;
+    }
+
+    /* menu */
+    .logo a{        
+        width: 100%;
+    }    
+    
+    .icon-menu img{
+        margin-left: 8px;
+    }    
+    
+    .title{
+        font-size: 12px;    
+    }
+
+}
+
