@@ -261,22 +261,23 @@ main{
 .images-nosotros{
     display: grid;
     grid-template-areas: 
-                "canchas        canchas"
-                "video          video";
+                "cancha1 cancha2"
+                "video video";
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
-    height: 80%;    
+    grid-template-rows: 100% auto;
+
+    height: 80%;
 
     justify-items: center;
+    align-items: flex-start;
 }
 
-.canchas{
-    position: relative;
+.cancha1{
+    grid-area: cancha1;
 
     object-fit: cover;
     width: 70%;
-    height: 40%;
+    height: 45%;
     border: 30px solid;
 
     border-image-source: url(../images/marco-img1.jpg);
@@ -289,40 +290,40 @@ main{
     transition: 0.6s;
 }
 
-video{
-    grid-area: video;
+.cancha2{
+    grid-area: cancha2; 
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    object-fit: cover;
+    width: 70%;
+    height: 45%;
+    border: 30px solid;
 
-    top: 0;
+    border-image-source: url(../images/marco-img1.jpg);
+    border-image-slice: 100;
+    border-image-repeat: stretch;
+    border-image-outset: 3px;
+    background-color: rgb(52, 52, 52);
+    border-radius: 10px;
+
+    transition: 0.6s;
+}
+
+video{    
+    position: absolute;
+    top: 72%;
+    left: 40%;
+    object-fit: cover;
+
     width: 500px;
-    height: 300px;
-    margin: 10px;
+    height: 250px;
     border: 5px solid;
     background-color: rgb(52, 52, 52);
-
-    /*
-    grid-area: video-nosotros;
-    position: relative;
-
-    width: 80%;
-    height: 40%;
-
-    border: 5px solid;
-    background-color: rgb(52, 52, 52);*/
 }
 
 /* contacto */
 .form-contacto{
     float: left;
-    /*
-    background-color: rgb(137, 137, 137);
-    border-radius: 10px;
-    border: 1px solid;
-    */
+  
     padding: 30px;    
     color: white;    
     border-color: black;    
@@ -473,6 +474,10 @@ th, td, tr {
 /* responsive */
 /* tamaño mobile */
 @media (max-width:767px){    
+    .container-grid{
+        grid-template-rows: auto 140vh auto;
+    }
+
     /* index */
     .iframes-index{
         flex-direction: column;
@@ -497,36 +502,29 @@ th, td, tr {
     /* nosotros */
     .images-nosotros{
         grid-template-areas: 
-                    "canchas"
-                    "canchas";
+                "cancha1"
+                "cancha2"
+                "video";
         grid-template-columns: 1fr;
-        
-        height: 680px;
-        width: 400px;    
-    
-        justify-items: center;
+        grid-template-rows: auto auto 50%;
+        gap: 5px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    video{
+        position: static;
+        grid-area: video;
+        width: 70%;
+        height: 45%;
     }
 
     footer{
         height: fit-content;
     }
-
-    .canchas{
-        width: 90%;
-        height: 60%;
-        margin-left: 25%;
-        border: 20px solid;
-    
-        border-image-source: url(../images/marco-img1.jpg);
-        border-image-slice: 100;
-        border-image-repeat: stretch;
-        border-image-outset: 3px;
-        background-color: rgb(52, 52, 52);
-        border-radius: 10px;
-    
-        transition: 0.6s;
-    }
-
     
     /* galerias */
     .images-galeria img{
@@ -625,6 +623,9 @@ th, td, tr {
 
 /*tamaño de tablet*/
 @media (min-width:768px) and (max-width:1023px){    
+    .container-grid{
+        grid-template-rows: auto 125vh auto;
+    }
     
     /* index */
     .iframes-index{
@@ -637,29 +638,46 @@ th, td, tr {
     }
 
     /* nosotros */
-    .images-nosotros img{
-        height: 300px;
-        width: 380px;
-        
-        border: 20px solid;
+    .images-nosotros{
+        grid-template-areas: 
+                "cancha1"
+                "cancha2"
+                "video";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 50%;
+        gap: 5px;
 
-        border-image-source: url(../images/marco-img1.jpg);
-        border-image-slice: 100;
-        border-image-repeat: stretch;
-        border-image-outset: 3px;
-        background-color: rgb(52, 52, 52);
-        border-radius: 10px;
-        
-        transition: 0.6s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    video{
+        position: static;
+        grid-area: video;
+        width: 70%;
+        height: 45%;
     }
 
     /* galerias */
+    .images-galeria{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .images-galeria img{
-        width: 350px;
-        height: 220px;
-        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 450px;
+        height: 310px;
         border: 20px solid;
-    
+
         border-image-source: url(../images/marco-img1.jpg);
         border-image-slice: 100;
         border-image-repeat: stretch;
