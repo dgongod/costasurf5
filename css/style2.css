@@ -30,11 +30,13 @@ body{
     
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
 
     background-color: rgb(52,52,52);
     color: white;
+
+    width: 100%;
 }
 
 header{
@@ -69,6 +71,7 @@ img:hover{
     justify-content: center;
     align-items: center;
     
+    margin: 0 10px 0 10px;
     border-bottom: 1px solid white;
 }
 
@@ -90,12 +93,14 @@ img:hover{
 /* items */
 .item{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    padding: 10px 0 10px;
+    padding: 10px 0 10px;  
     border-bottom: 1px solid white;
+
+    width: 100%;
 }
 
 .item a{
@@ -135,7 +140,7 @@ img:hover{
 
 .icon-menu img{
     width: 100%;
-    margin-left: 15px;    
+    margin-left: 15px;  
 }
 
 .icon-menu img:hover{
@@ -152,19 +157,6 @@ a{
 
 h1{    
     padding: 6px;    
-}
-
-.search {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;   
-
-    margin-top: 20px;
-}
-
-.inputsearch{    
-    width: 80%;
 }
 
 /* iconos footer */
@@ -431,26 +423,19 @@ th, td, tr {
     border-bottom: 1px solid;
  }
 
-.images-escuelita, .images-galeria{
+.images-galeria{
     text-align: center;
     padding: 10px;    
 }
 
-.images-escuelita img{
-    width: 350px;
-    height: 250px;
-    margin: 15px;
-    border: 30px solid;
+.carrusel{
+    margin-top: 10px;
+    width: 80%;
+}
+
+.carousel-inner img{
+    height: 200px;
     object-fit: cover;
-
-    border-image-source: url(../images/marco-img1.jpg);
-    border-image-slice: 100;
-    border-image-repeat: stretch;
-    border-image-outset: 3px;
-    background-color: rgb(52, 52, 52);
-    border-radius: 10px;
-
-    transition: 0.6s;
 }
 
 /* galerias */
