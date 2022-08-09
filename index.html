@@ -19,66 +19,76 @@
             <h1>CostaSurF5</h1>
         </header>
 
-        <div class="menu">
-            <nav>
-                <div class="logo">
-                    <a href="#">
-                        <img class="animate__animated animate__rubberBand" src="images/logo.png" alt="CostaSurF5">
-                    </a>
-                </div>        
-
-                <ul class="container-fluid">
-                    <li class="item">
-                        <a href="#">
-                            <div class="icon-menu color-invertido">
-                                <img class="animate__animated animate__backInLeft" src="./images/futbol-regular.png" alt="Futbol">                            
-                            </div>
-                            <div class="title">Inicio</div>
-                        </a>
-                    </li>                
-
-                    <li class="item"> 
-                        <a href="pages/nosotros.html">
-                            <div class="icon-menu color-invertido">
-                                <img class="animate__animated animate__backInLeft" src="./images/group-solid.png" alt="Nosotros">
-                            </div>
-                            <div class="title">Nosotros</div>
-                        </a>                
-                    </li>
-
-                    <li class="item"> 
-                        <a href="pages/galerias.html">
-                            <div class="icon-menu color-invertido">
-                                <img class="animate__animated animate__backInLeft" src="./images/images-solid.png" alt="Galerias">
-                            </div>
-                            <div class="title">Galerias</div>
-                        </a>                
-                    </li>
-
-                    <li class="item"> 
-                        <a href="pages/escuelita.html">
-                            <div class="icon-menu color-invertido">
-                                <img class="animate__animated animate__backInLeft" src="./images/running-solid.png" alt="Escuelita">
-                            </div>
-                            <div class="title">Escuelita</div>
-                        </a>                
-                    </li>
-
-                    <li class="item"> 
-                        <a href="pages/contacto.html">
-                            <div class="icon-menu color-invertido">
-                                <img class="animate__animated animate__backInLeft" src="./images/contact-solid.png" alt="Contacto">
-                            </div>
-                            <div class="title">Contacto</div>
-                        </a>                
-                    </li>
-                </ul>                
-            </nav>
+        <nav class="menu offcanvas offcanvas-start" id="menu">
+            <button type="button" class="btn-toggler-col pt-3" data-bs-dismiss="offcanvas">
+                <span class="navbar-toggler-icon">
+                    <div class="btn-hamburger"></div>
+                    <div class="btn-hamburger"></div>
+                    <div class="btn-hamburger"></div>
+                </span>
+            </button>
             
-            <!--<section class="search">
-                <input class="inputsearch" type="text" placeholder="Buscar..." >
-            </section>-->
-        </div>        
+            <div class="logo">                    
+                <a href="#">
+                    <img class="animate__animated animate__rubberBand" src="images/logo.png" alt="CostaSurF5">
+                </a>
+            </div>        
+
+            <ul class="container-fluid">
+                <li class="item">
+                    <a href="#">
+                        <div class="icon-menu color-invertido">
+                            <img class="animate__animated animate__backInLeft" src="./images/futbol-regular.png" alt="Futbol">                            
+                        </div>
+                        <div class="title">Inicio</div>
+                    </a>
+                </li>                
+
+                <li class="item"> 
+                    <a href="pages/nosotros.html">
+                        <div class="icon-menu color-invertido">
+                            <img class="animate__animated animate__backInLeft" src="./images/group-solid.png" alt="Nosotros">
+                        </div>
+                        <div class="title">Nosotros</div>
+                    </a>                
+                </li>
+
+                <li class="item"> 
+                    <a href="pages/galerias.html">
+                        <div class="icon-menu color-invertido">
+                            <img class="animate__animated animate__backInLeft" src="./images/images-solid.png" alt="Galerias">
+                        </div>
+                        <div class="title">Galerias</div>
+                    </a>                
+                </li>
+
+                <li class="item"> 
+                    <a href="pages/escuelita.html">
+                        <div class="icon-menu color-invertido">
+                            <img class="animate__animated animate__backInLeft" src="./images/running-solid.png" alt="Escuelita">
+                        </div>
+                        <div class="title">Escuelita</div>
+                    </a>                
+                </li>
+
+                <li class="item"> 
+                    <a href="pages/contacto.html">
+                        <div class="icon-menu color-invertido">
+                            <img class="animate__animated animate__backInLeft" src="./images/contact-solid.png" alt="Contacto">
+                        </div>
+                        <div class="title">Contacto</div>
+                    </a>                
+                </li>
+            </ul>
+        </nav>
+
+        <button type="button" class="btn-toggler-exp pb-1" data-bs-toggle="offcanvas" data-bs-target="#menu">
+            <span class="navbar-toggler-icon">
+                <div class="btn-hamburger"></div>
+                <div class="btn-hamburger"></div>
+                <div class="btn-hamburger"></div>
+            </span>
+        </button>
 
         <main class="content">            
             <section>
@@ -120,5 +130,7 @@
             </a>
         </footer>
     </div>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>

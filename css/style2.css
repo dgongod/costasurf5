@@ -14,13 +14,44 @@ body{
     font-size: 16px;
 }
 
+.btn-toggler-exp{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+
+    background-color: rgb(52, 52, 52);
+    border: none;
+    width: 45px;
+    height: 60px;
+    padding-left: 10px;
+}
+
+.btn-toggler-col{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-color: rgb(52, 52, 52);
+    border: none;
+    width: 100%;
+    padding-right: 10px;
+}
+
+.btn-hamburger{
+    background-color: #fff;
+    width: 90%;
+    height: 3px;
+    margin: 5px 0;
+}
+
 .container-grid{
     display: grid;    
     grid-template-areas: 
-                "menu header"
-                "menu content"
-                "menu footer";
-    grid-template-columns: 0.5fr 3.5fr;
+                "header"
+                "content"
+                "footer";
+    grid-template-columns: 4fr;
     grid-template-rows: auto 100vh auto;
 }
 
@@ -36,7 +67,7 @@ body{
     background-color: rgb(52,52,52);
     color: white;
 
-    width: 100%;
+    width: 200px;
 }
 
 header{
@@ -149,6 +180,10 @@ img:hover{
     filter: invert(1) hue-rotate(180deg) contrast(2);
 }
 /* --- */
+
+.carousel-item h5, .carousel-item p{
+    color: white;
+} 
 
 a{
     text-decoration: none;
@@ -312,63 +347,9 @@ video{
     background-color: rgb(52, 52, 52);
 }
 
-/* contacto */
-.form-contacto{
-    float: left;
-  
-    padding: 30px;    
-    color: white;    
-    border-color: black;    
-    width: 100%;
-    border-bottom: 1px solid;
-    border-color: rgb(52, 52, 52);
-}
-
-.label-contacto{
-    float: left;
-    text-align: right;
-    width: 200px;    
-    margin-top: 4px;
-}
-
-.text-btn-contacto{
-    float: left;    
-    width: 300px;
-    text-align: left;    
-    margin-left: 5px;
-}
-
-.text-btn-contacto textarea,
-.text-btn-contacto input[type=text]{    
-    margin: 0 5px;
-    width: 290px;
-    background-color: white;
-    border-color: rgb(52, 52, 52);
-    border-width: 1px;
-    
-}
-
-.text-btn-contacto textarea{    
-    margin: 5px 5px;
-}
-
-.text-btn-contacto input[type=submit],
-.text-btn-contacto input[type=reset]{    
-    margin: 0 5px;
-    width: 80px;
-    height: 30px;
-    background-color: rgb(52, 52, 52);
-    color: white;
-    cursor: pointer;
-}
-
-.text-btn-contacto input[type=submit]:hover,
-.text-btn-contacto input[type=reset]:hover{    
-    margin: 0 5px;
-    width: 80px;
+.btn:hover{
     background-color: rgba(222, 159, 58, 0.8);
-    color: white;
-    cursor: pointer;
+    color: rgb(46, 46, 46);
 }
 
 .pie-contacto{
@@ -396,20 +377,9 @@ video{
 }
 
 /* escuelita */
-table{
-    background-color: white;
-    border-style: ridge;
-    border: 1px solid #000;
-    text-align: center;
-    margin: 10px auto;
-}
-
 th, td, tr {
-    width: 15%;
     text-align: center;    
     border: 1px solid #000;
-    border-collapse: collapse;
-    padding: 0.6em;
  }
 
  th {
@@ -428,13 +398,8 @@ th, td, tr {
     padding: 10px;    
 }
 
-.carrusel{
-    margin-top: 10px;
-    width: 80%;
-}
-
 .carousel-inner img{
-    height: 200px;
+    height: 240px;
     object-fit: cover;
 }
 
@@ -570,39 +535,6 @@ th, td, tr {
         border-radius: 10px;
     
         transition: 0.6s;
-    }
-
-    /* contacto */
-    .form-contacto{
-        display: flex;
-        justify-content: center;
-
-        color: white;    
-        border-color: black;    
-        width: 83%;
-        border-bottom: none;        
-    }
-    
-    .label-contacto{
-        font-size: 14px;
-    }
-        
-    .pie-contacto{
-        padding-left: 10%;
-        width: 80%;
-    }
-    
-    .parrafo-contacto{
-        margin-top: 10px;
-    }
-    
-    .iframe-contacto{
-        margin-top: 5px;
-    }
-    
-    .iframe-contacto iframe{
-        width: 380px;
-        height: 230px;
     }
 }
 
