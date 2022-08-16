@@ -1,0 +1,35 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../images/background-footer.jpg); 
+    background-size: cover;
+
+    color: white;
+    
+    height: 50px;
+    font-size: 12px;
+
+    a{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+        margin: 5%;
+    }
+
+    /* iconos footer */
+    .icon-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        padding: 10px;
+        width: 40px;
+    }
+/* --- */
+}
