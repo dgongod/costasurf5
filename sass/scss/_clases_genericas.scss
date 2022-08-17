@@ -1,0 +1,4 @@
+.color-invertido{
+    /* filtro para invertir colores */
+    filter: invert(1) hue-rotate(180deg) contrast(2);
+}
