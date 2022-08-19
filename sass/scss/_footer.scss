@@ -4,8 +4,8 @@ footer{
     justify-content: center;
     align-items: center;
 
-    background-image: url(../images/background-footer.jpg); 
-    background-size: cover;
+    background-image: map-get($footer, bg-img ); 
+    background-size: map-get($footer, bg-sz );
 
     color: white;
     

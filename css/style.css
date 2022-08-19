@@ -210,6 +210,13 @@ footer {
   border-radius: 10px;
   transition: 0.6s; }
 
+video {
+  object-fit: cover;
+  width: 600px;
+  height: 350px;
+  border: 5px solid;
+  background-color: #343434; }
+
 @media (max-width: 767px) {
   .iframes-index {
     flex-direction: column; }
