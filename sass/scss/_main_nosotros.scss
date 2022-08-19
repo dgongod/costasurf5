@@ -1,0 +1,15 @@
+.cancha{
+    object-fit: cover;
+    width: 550px;
+    height: 350px;
+    border: 30px solid;
+
+    border-image-source: url(../images/marco-img1.jpg);
+    border-image-slice: 100;
+    border-image-repeat: stretch;
+    border-image-outset: 3px;
+    background-color: rgb(52, 52, 52);
+    border-radius: 10px;
+
+    transition: 0.6s;
+}
