@@ -30,9 +30,7 @@
         }
 
         .btn-hamburger{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-box(row);
             
             background-color: white;
             width: 25px;
@@ -42,14 +40,11 @@
     }
 
     .logo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex-box(column);
         
         margin: 0 10px 0 10px;
         padding: 15px;
-        width: 100%;
+        width: $ancho-total;
         
         img{
             animation-name: animate__animated animate__rubberBand;
@@ -58,36 +53,27 @@
             animation-iteration-count: 1;
             animation-timing-function: ease-in-out;    
             
-            width: 100%;
+            width: $ancho-total;
         }
     }
 
     ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex-box(column);
 
-        width: 100%;
+        width: $ancho-total;
 
         /* items */
         .item{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            @include flex-box(row);
 
             padding: 10px 0 10px;  
             border-top: 1px solid white;
-            width: 100%;            
+            width: $ancho-total;            
 
             a{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
+                @include flex-box(row);
 
-                width: 100%;
+                width: $ancho-total;
 
                 &:hover{
                     background-color: $color-hover-boton;
@@ -96,16 +82,16 @@
                     font-weight: bold;
                     color: black;
         
-                    width: 100%;
+                    width: $ancho-total;
                 }
 
                 .icon-menu{                    
                     font-size: 14px;
                     padding: 8px;
-                    width: 40px;                    
+                    width: 40px;      
 
                     img{
-                        width: 100%;
+                        width: $ancho-total;
 
                         &:hover{
                             transition: 0.6s;
@@ -118,7 +104,7 @@
                 .title{
                     font-size: 14px;    
                     padding: 8px;
-                    width: 100%;
+                    width: $ancho-total;
                 }
             }                
         }

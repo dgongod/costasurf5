@@ -1,26 +1,17 @@
 .header-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    
+    @include flex-box(row);
     background-color: $color-menu;
 
     .btn-toggler-exp{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        background-color: $color-menu;
+        @extend .header-header;        
+        
         border: none;
         width: 50px;
 
         .btn-hamburger{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend .header-header;
             
-            background-color: #fff;
+            background-color: white;
             width: 25px;
             height: 3px;
             margin: 5px 0;
@@ -28,17 +19,14 @@
     }
 
     header{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @extend .header-header;
         
         background-image: map-get($header, bg-img); 
         background-size: map-get($header, bg-sz);
     
         color: white;
         height: 60px;
-        width: 100%;
+        width: $ancho-total;
     
         text-shadow: 0 0 8px white;
         font-style: italic;

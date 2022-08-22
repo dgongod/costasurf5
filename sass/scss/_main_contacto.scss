@@ -1,0 +1,26 @@
+.pie-contacto{
+    @include flex-box(column);
+
+    width: $ancho-total;
+    
+    .parrafo-contacto{
+        @include flex-box(column);
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .iframe-contacto{
+        @include flex-box(column);
+
+        iframe{
+            width: 1000px;
+            height: 400px;
+        }
+    }
+}
+
+.btn:hover{
+    background-color: $color-hover-boton;
+    color: rgb(46, 46, 46);
+}

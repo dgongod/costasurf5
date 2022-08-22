@@ -1,0 +1,21 @@
+.images-galeria{
+    @include flex-box(row);
+    
+    img{    
+        width: 400px;    
+        height: 300px;
+        margin: 15px;
+        border: 30px solid;
+        object-fit: cover;
+
+        border-image-source: $border-image-source;
+        border-image-slice: $border-image-slice;
+        border-image-repeat: $border-image-repeat;
+        border-image-outset: $border-image-outset;
+        border-radius: $border-radius;
+
+        background-color: rgb(52, 52, 52);
+        
+        transition: 0.6s;
+    }
+}

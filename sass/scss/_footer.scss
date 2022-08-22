@@ -1,8 +1,5 @@
 footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include flex-box(row);
 
     background-image: map-get($footer, bg-img ); 
     background-size: map-get($footer, bg-sz );
@@ -24,18 +21,9 @@ footer{
 
     /* iconos footer */
     .icon-footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flex-box(row);
     
         padding: 10px;
         width: 40px;
     }
-}
-
-@media (max-width:767px){    
-    footer{
-        height: fit-content;
-    }        
 }

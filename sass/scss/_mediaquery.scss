@@ -7,6 +7,23 @@
             height: 200px;    
         }
     }
+
+    .images-galeria{
+        @include flex-box(column);
+    }
+        
+    footer{
+        height: fit-content;
+    }
+
+    .pie-contacto{
+        .iframe-contacto{
+            iframe{
+                width: 600px;
+                height: 400px;
+            }
+        }
+    }
 }
 
 @media (min-width:768px) and (max-width:1023px){    
@@ -16,6 +33,15 @@
         iframe{
             width: 400px;
             height: 200px;    
+        }
+    }
+
+    .pie-contacto{
+        .iframe-contacto{
+            iframe{
+                width: 800px;
+                height: 400px;
+            }
         }
     }
 }

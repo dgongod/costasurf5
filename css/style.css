@@ -4,21 +4,6 @@
   padding: 0;
   box-sizing: border-box; }
 
-a {
-  text-decoration: none;
-  color: white; }
-
-ul {
-  list-style: none; }
-
-p {
-  text-align: justify;
-  margin: 20px;
-  color: white;
-  padding-bottom: 20px;
-  border-bottom: 1px solid;
-  border-color: black; }
-
 body {
   display: flex;
   flex-direction: column;
@@ -26,6 +11,22 @@ body {
   background-image: linear-gradient(to top, #79f28f, #5fc86a, #459f48, #2a7927, #0c5404);
   font-family: 'Poppins', sans-serif;
   font-size: 16px; }
+  body a {
+    text-decoration: none;
+    color: white; }
+  body ul {
+    list-style: none; }
+  body p {
+    text-align: justify;
+    margin: 20px;
+    color: white;
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
+    border-color: black; }
+  body img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer; }
 
 .color-invertido {
   /* filtro para invertir colores */
@@ -55,6 +56,7 @@ body {
         transition: 0.3s; }
     .menu .btn-toggler-col .btn-hamburger {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
       background-color: white;
@@ -119,33 +121,22 @@ body {
           padding: 8px;
           width: 100%; }
 
-.header-header {
+.header-header, .header-header .btn-toggler-exp, .header-header .btn-toggler-exp .btn-hamburger, .header-header header {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: #343434; }
-  .header-header .btn-toggler-exp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #343434;
+  .header-header .btn-toggler-exp, .header-header .btn-toggler-exp .btn-hamburger .btn-toggler-exp {
     border: none;
     width: 50px; }
     .header-header .btn-toggler-exp .btn-hamburger {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #fff;
+      background-color: white;
       width: 25px;
       height: 3px;
       margin: 5px 0; }
-  .header-header header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/background-header.jpg);
+  .header-header header, .header-header .btn-toggler-exp header, .header-header .btn-toggler-exp .btn-hamburger header {
+    background-image: url(../../images/background-header.jpg);
     background-size: cover;
     color: white;
     height: 60px;
@@ -153,12 +144,108 @@ body {
     text-shadow: 0 0 8px white;
     font-style: italic; }
 
+.iframes-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .iframes-index div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .iframes-index div span {
+      color: white;
+      padding: 0 30px; }
+  .iframes-index iframe {
+    width: 500px;
+    height: 300px;
+    padding: 0 30px; }
+
+.cancha {
+  object-fit: cover;
+  width: 550px;
+  height: 350px;
+  border: 30px solid;
+  border-image-source: url(../../images/marco-img1.jpg);
+  border-image-slice: 100;
+  border-image-repeat: stretch;
+  border-image-outset: 3px;
+  border-radius: 10px;
+  background-color: #343434;
+  transition: 0.6s; }
+
+video {
+  object-fit: cover;
+  width: 600px;
+  height: 350px;
+  border: 5px solid;
+  background-color: #343434; }
+
+.images-galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .images-galeria img {
+    width: 400px;
+    height: 300px;
+    margin: 15px;
+    border: 30px solid;
+    object-fit: cover;
+    border-image-source: url(../../images/marco-img1.jpg);
+    border-image-slice: 100;
+    border-image-repeat: stretch;
+    border-image-outset: 3px;
+    border-radius: 10px;
+    background-color: #343434;
+    transition: 0.6s; }
+
+th, td, tr {
+  text-align: center;
+  border: 1px solid #000; }
+
+.parrafo-profesores {
+  text-align: center;
+  padding-bottom: 18px;
+  border-bottom: 1px solid; }
+
+.carousel-inner img {
+  height: 240px;
+  object-fit: cover; }
+
+.pie-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  .pie-contacto .parrafo-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .pie-contacto .iframe-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .pie-contacto .iframe-contacto iframe {
+      width: 1000px;
+      height: 400px; }
+
+.btn:hover {
+  background-color: rgba(222, 159, 58, 0.8);
+  color: #2e2e2e; }
+
 footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/background-footer.jpg);
+  background-image: url(../../images/background-footer.jpg);
   background-size: cover;
   color: white;
   height: 50px;
@@ -178,55 +265,28 @@ footer {
     width: 40px; }
 
 @media (max-width: 767px) {
-  footer {
-    height: fit-content; } }
-
-.iframes-index {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-  .iframes-index div {
-    display: flex;
-    flex-direction: column; }
-    .iframes-index div span {
-      color: white;
-      padding: 0 30px; }
-  .iframes-index iframe {
-    width: 500px;
-    height: 300px;
-    padding: 0 30px; }
-
-.cancha {
-  object-fit: cover;
-  width: 550px;
-  height: 350px;
-  border: 30px solid;
-  border-image-source: url(../images/marco-img1.jpg);
-  border-image-slice: 100;
-  border-image-repeat: stretch;
-  border-image-outset: 3px;
-  background-color: #343434;
-  border-radius: 10px;
-  transition: 0.6s; }
-
-video {
-  object-fit: cover;
-  width: 600px;
-  height: 350px;
-  border: 5px solid;
-  background-color: #343434; }
-
-@media (max-width: 767px) {
   .iframes-index {
     flex-direction: column; }
     .iframes-index iframe {
       width: 400px;
-      height: 200px; } }
+      height: 200px; }
+  .images-galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  footer {
+    height: fit-content; }
+  .pie-contacto .iframe-contacto iframe {
+    width: 600px;
+    height: 400px; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .iframes-index {
     flex-direction: row; }
     .iframes-index iframe {
       width: 400px;
-      height: 200px; } }
+      height: 200px; }
+  .pie-contacto .iframe-contacto iframe {
+    width: 800px;
+    height: 400px; } }

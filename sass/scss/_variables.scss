@@ -2,13 +2,22 @@ $color-menu: rgb(52, 52, 52);
 $color-anclas: white;
 $color-texto-menu: white;
 $color-hover-boton: rgba(222, 159, 58, 0.8);
+$ancho-total :100%;
+
+// bordes imagenes
+$border-image-source: url(../../images/marco-img1.jpg);
+$border-image-slice: 100;
+$border-image-repeat: stretch;
+$border-image-outset: 3px;
+$border-radius: 10px;
+// ***
 
 $header:(
-    bg-img: url(../images/background-header.jpg), 
+    bg-img: url(../../images/background-header.jpg), 
     bg-sz: cover
 );
 
 $footer:(
-    bg-img: url(../images/background-footer.jpg), 
+    bg-img: url(../../images/background-footer.jpg), 
     bg-sz: cover
 );
