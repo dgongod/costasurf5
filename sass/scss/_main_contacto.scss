@@ -1,3 +1,16 @@
+.botones{
+    @include flex-box(row);
+    
+    button{
+        width: 100px;
+        margin: 10px 10px 0;
+
+        &:hover{
+            background-color: $color-hover-boton;
+            color: rgb(46, 46, 46);
+        }
+    }
+}
 .pie-contacto{
     @include flex-box(column);
 
@@ -18,9 +31,4 @@
             height: 400px;
         }
     }
-}
-
-.btn:hover{
-    background-color: $color-hover-boton;
-    color: rgb(46, 46, 46);
 }

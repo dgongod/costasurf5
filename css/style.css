@@ -214,6 +214,18 @@ th, td, tr {
   height: 240px;
   object-fit: cover; }
 
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .botones button {
+    width: 100px;
+    margin: 10px 10px 0; }
+    .botones button:hover {
+      background-color: rgba(222, 159, 58, 0.8);
+      color: #2e2e2e; }
+
 .pie-contacto {
   display: flex;
   flex-direction: column;
@@ -235,10 +247,6 @@ th, td, tr {
     .pie-contacto .iframe-contacto iframe {
       width: 1000px;
       height: 400px; }
-
-.btn:hover {
-  background-color: rgba(222, 159, 58, 0.8);
-  color: #2e2e2e; }
 
 footer {
   display: flex;
@@ -264,7 +272,14 @@ footer {
     padding: 10px;
     width: 40px; }
 
-@media (max-width: 767px) {
+@media (max-width: 400px) {
+  .iframes-index {
+    flex-direction: column; }
+    .iframes-index iframe {
+      width: 220px;
+      height: 120px; } }
+
+@media (min-width: 401px) and (max-width: 767px) {
   .iframes-index {
     flex-direction: column; }
     .iframes-index iframe {

@@ -1,4 +1,15 @@
-@media (max-width:767px){    
+@media (max-width: 400px){
+    .iframes-index{
+        flex-direction: column;
+
+        iframe{
+            width: 220px;
+            height: 120px;    
+        }
+    }
+}    
+
+@media (min-width: 401px) and (max-width: 767px){    
     .iframes-index{
         flex-direction: column;
 
@@ -26,7 +37,7 @@
     }
 }
 
-@media (min-width:768px) and (max-width:1023px){    
+@media (min-width: 768px) and (max-width: 1023px){    
     .iframes-index{
         flex-direction: row;
 
