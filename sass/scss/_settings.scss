@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
 *{
     margin: 0;
@@ -15,30 +16,30 @@ body{
 
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+}
 
-    a{
-        text-decoration: none;
-        color: $color-anclas;
-    }
-    
-    ul{
-        list-style: none;
-    }
-    
-    p{
-        text-align: justify;
-        margin: 20px;
-        color: white;
-        padding-bottom: 20px;
-        border-bottom: 1px solid;
-        border-color: black;
-    }
+a{
+    text-decoration: none;
+    color: $color-anclas;
+}
 
-    img{
-        &:hover{
-            transform: scale(1.05);
-            transition: 0.5s;
-            cursor: pointer;
-        }
+ul{
+    list-style: none;
+}
+
+p{
+    text-align: justify;
+    margin: 20px;
+    color: $color-anclas;
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
+    border-color: black;
+}
+
+img{
+    &:hover{
+        transform: scale(1.05);
+        transition: 0.5s;
+        cursor: pointer;
     }
 }

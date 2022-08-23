@@ -9,9 +9,9 @@
         width: 50px;
 
         .btn-hamburger{
-            @extend .header-header;
+            @extend .header-header;            
+            background-color: $color-anclas;
             
-            background-color: white;
             width: 25px;
             height: 3px;
             margin: 5px 0;
@@ -24,11 +24,11 @@
         background-image: map-get($header, bg-img); 
         background-size: map-get($header, bg-sz);
     
-        color: white;
+        color: $color-texto-menu;
         height: 60px;
         width: $ancho-total;
     
-        text-shadow: 0 0 8px white;
+        text-shadow: 0 0 8px $color-anclas;
         font-style: italic;
     }
 }

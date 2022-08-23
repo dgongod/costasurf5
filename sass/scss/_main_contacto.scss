@@ -4,10 +4,14 @@
     button{
         width: 100px;
         margin: 10px 10px 0;
+        background-color: $color-menu;
+        color: $color-anclas;
+        border: 1px solid $color-anclas;
 
         &:hover{
             background-color: $color-hover-boton;
-            color: rgb(46, 46, 46);
+            color: black;
+            border: 1px solid black;
         }
     }
 }
