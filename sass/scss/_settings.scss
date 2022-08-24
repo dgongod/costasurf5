@@ -12,7 +12,7 @@ body{
     flex-direction: column;
 
     min-height: 100vh;
-    background-image: linear-gradient(to top, #79f28f, #5fc86a, #459f48, #2a7927, #0c5404);
+    background-image: linear-gradient(to top, #85f499, #5fc86a, #459f48, #328330, #287d1f);
 
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -36,10 +36,10 @@ p{
     border-color: black;
 }
 
-img{
+/*img{
     &:hover{
         transform: scale(1.05);
         transition: 0.5s;
         cursor: pointer;
     }
-}
+}*/
