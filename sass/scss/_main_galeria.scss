@@ -1,11 +1,6 @@
 .images-galeria{
     @include flex-box(row);
-
-    //a{
-        //cursor: none;
-        //cursor: url("../../images/rsz_futbol-regular.cur");
-    //}
-
+    
     .ih-item{
         @include flex-box(row);
 

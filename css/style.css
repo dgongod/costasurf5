@@ -213,7 +213,7 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 550px;
+    width: 510px;
     height: 350px;
     background-color: #343434;
     border-bottom-right-radius: 10px;
@@ -395,10 +395,35 @@ footer {
     .video video {
       width: 320px;
       height: 180px; }
+  .images-galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .images-galeria .ih-item, .images-galeria .canchas img, .canchas .images-galeria img, .images-galeria img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 280px;
+      height: 150px; }
+  table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 200px;
+    font-size: 10px; }
   footer .desafio {
     display: none; }
   footer span {
-    display: none; } }
+    display: none; }
+  input, textarea, .text-white, .btn, .parrafo-contacto {
+    font-size: 12px; }
+  .pie-contacto .iframe-contacto iframe {
+    width: 300px;
+    height: 200px; } }
 
 @media (min-width: 401px) and (max-width: 767px) {
   .iframes-index {
@@ -443,13 +468,31 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .images-galeria .ih-item, .images-galeria .canchas img, .canchas .images-galeria img, .images-galeria img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 250px; }
   footer .desafio {
     display: none; }
   footer span {
     display: none; }
+  table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 300px;
+    font-size: 10px; }
+  .carousel-inner img {
+    height: 400px;
+    object-fit: cover; }
   .pie-contacto .iframe-contacto iframe {
-    width: 600px;
-    height: 400px; } }
+    width: 360px;
+    height: 300px; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .iframes-index {
@@ -476,6 +519,21 @@ footer {
         padding: 0;
         justify-content: center;
         align-items: center; }
+  .images-galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .images-galeria .ih-item, .images-galeria .canchas img, .canchas .images-galeria img, .images-galeria img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 600px;
+      height: 350px; }
+  .carousel-inner img {
+    height: 500px;
+    object-fit: cover; }
   .pie-contacto .iframe-contacto iframe {
-    width: 800px;
-    height: 400px; } }
+    width: 650px;
+    height: 450px; } }

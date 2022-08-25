@@ -45,6 +45,26 @@
         }
     }
 
+    .images-galeria{
+        @include flex-box(column);
+
+        .ih-item{
+            @include flex-box(column);
+
+            width: 280px;    
+            height: 150px;
+        }
+    }
+
+    table{
+        @include flex-box(row);
+        
+        margin-top: 30px;
+        width: 200px;
+
+        font-size: 10px;
+    }
+
     footer{
         .desafio{
             display: none;           
@@ -52,6 +72,19 @@
 
         span{
             display: none;
+        }
+    }
+
+    input, textarea, .text-white, .btn, .parrafo-contacto{
+        font-size: 12px;
+    }
+
+    .pie-contacto{
+        .iframe-contacto{
+            iframe{
+                width: 300px;
+                height: 200px;
+            }
         }
     }
 }    
@@ -106,6 +139,13 @@
 
     .images-galeria{
         @include flex-box(column);
+
+        .ih-item{
+            @include flex-box(column);
+
+            width: 350px;    
+            height: 250px;
+        }
     }
         
     footer{
@@ -118,11 +158,25 @@
         }
     }
 
+    table{
+        @include flex-box(row);
+
+        margin-top: 30px;
+        width: 300px;
+
+        font-size: 10px;
+    }
+
+    .carousel-inner img{
+        height: 400px;
+        object-fit: cover;
+    }
+
     .pie-contacto{
         .iframe-contacto{
             iframe{
-                width: 600px;
-                height: 400px;
+                width: 360px;
+                height: 300px;
             }
         }
     }
@@ -160,11 +214,27 @@
         }
     }
 
+    .images-galeria{
+        @include flex-box(column);
+
+        .ih-item{
+            @include flex-box(column);
+
+            width: 600px;    
+            height: 350px;
+        }
+    }
+
+    .carousel-inner img{
+        height: 500px;
+        object-fit: cover;
+    }
+
     .pie-contacto{
         .iframe-contacto{
             iframe{
-                width: 800px;
-                height: 400px;
+                width: 650px;
+                height: 450px;
             }
         }
     }
