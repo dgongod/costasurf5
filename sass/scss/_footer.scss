@@ -11,8 +11,12 @@ footer{
 
     margin-top: auto;
 
-    a{
-        text-align: center;
+    .desafio{
+        @include flex-box(row);
+
+        a{
+            text-align: center;
+        }
     }
 
     span{

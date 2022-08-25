@@ -1,10 +1,31 @@
-@media (max-width: 400px){
+@media (max-width: 400px){    
     .iframes-index{
         flex-direction: column;
 
         iframe{
             width: 220px;
             height: 120px;    
+        }
+    }
+
+    .canchas{
+        @include flex-box(column);
+    }
+
+    .video{    
+        @include flex-box(column);
+
+        width: 550px;
+        height: 350px;
+    }
+
+    footer{
+        .desafio{
+            display: none;           
+        }
+
+        span{
+            display: none;
         }
     }
 }    
@@ -19,12 +40,29 @@
         }
     }
 
+    .canchas{
+        @include flex-box(column);
+    }
+
+    .video{
+        @include flex-box(column);
+        
+        width: 550px;
+        height: 350px;
+    }
+
     .images-galeria{
         @include flex-box(column);
     }
         
     footer{
-        height: fit-content;
+        .desafio{
+            display: none;           
+        }
+
+        span{
+            display: none;
+        }
     }
 
     .pie-contacto{

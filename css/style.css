@@ -201,34 +201,60 @@ p {
   .iframes-index iframe {
     width: 500px;
     height: 300px;
-    padding: 0 30px; }
+    padding: 5px 30px 10px; }
 
-.cancha {
-  object-fit: cover;
-  width: 550px;
-  height: 350px;
-  border: 30px solid;
-  border-image-source: url(../../images/marco-img1.jpg);
-  border-image-slice: 100;
-  border-image-repeat: stretch;
-  border-image-outset: 3px;
-  border-radius: 10px;
-  background-color: #343434;
-  transition: 0.6s; }
+.canchas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .canchas .ih-item, .canchas img, .canchas .images-galeria img, .images-galeria .canchas img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 350px;
+    background-color: #343434;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-width: 2px;
+    margin: 30px 30px 0 30px; }
+    .canchas .ih-item:hover, .canchas img:hover, .canchas .images-galeria img:hover, .images-galeria .canchas img:hover {
+      transform: scale(1.05);
+      box-shadow: 6px 6px 3px white; }
+    .canchas .ih-item .info, .canchas img .info, .canchas .images-galeria img .info, .images-galeria .canchas img .info {
+      border-bottom-right-radius: 10px;
+      border-top-left-radius: 10px;
+      border: 1px solid white; }
+  .canchas img {
+    object-fit: cover; }
+  .canchas p {
+    border-bottom: none; }
 
-video {
-  object-fit: cover;
-  width: 600px;
-  height: 350px;
-  border: 5px solid;
-  background-color: #343434; }
+.video {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .video p {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    border-bottom: none; }
+  .video video {
+    object-fit: cover;
+    width: 700px;
+    height: 400px;
+    border: 2px solid;
+    background-color: #343434; }
 
 .images-galeria {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center; }
-  .images-galeria .ih-item, .images-galeria img {
+  .images-galeria .ih-item, .images-galeria .canchas img, .canchas .images-galeria img, .images-galeria img {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -240,7 +266,7 @@ video {
     border-top-right-radius: 10px;
     border-width: 2px;
     margin: 30px; }
-    .images-galeria .ih-item:hover, .images-galeria img:hover {
+    .images-galeria .ih-item:hover, .images-galeria .canchas img:hover, .canchas .images-galeria img:hover, .images-galeria img:hover {
       transform: scale(1.05);
       box-shadow: 6px 6px 3px white; }
   .images-galeria img {
@@ -311,8 +337,13 @@ footer {
   font-size: 12px;
   margin-top: auto;
   /* iconos footer */ }
-  footer a {
-    text-align: center; }
+  footer .desafio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    footer .desafio a {
+      text-align: center; }
   footer span {
     margin: 5%; }
   footer .icon-footer {
@@ -328,7 +359,23 @@ footer {
     flex-direction: column; }
     .iframes-index iframe {
       width: 220px;
-      height: 120px; } }
+      height: 120px; }
+  .canchas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 350px; }
+  footer .desafio {
+    display: none; }
+  footer span {
+    display: none; } }
 
 @media (min-width: 401px) and (max-width: 767px) {
   .iframes-index {
@@ -336,13 +383,27 @@ footer {
     .iframes-index iframe {
       width: 400px;
       height: 200px; }
+  .canchas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 350px; }
   .images-galeria {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  footer {
-    height: fit-content; }
+  footer .desafio {
+    display: none; }
+  footer span {
+    display: none; }
   .pie-contacto .iframe-contacto iframe {
     width: 600px;
     height: 400px; } }
