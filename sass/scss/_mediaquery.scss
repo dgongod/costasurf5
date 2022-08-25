@@ -1,22 +1,48 @@
 @media (max-width: 400px){    
     .iframes-index{
-        flex-direction: column;
+        @include flex-box(column);
 
         iframe{
-            width: 220px;
-            height: 120px;    
+            width: 300px;
+            height: 150px;    
         }
     }
 
     .canchas{
         @include flex-box(column);
+
+        .ih-item{            
+            width: 320px;    
+            height: 180px;
+
+            .info{
+                @include flex-box(column);    
+
+                top:0 !important;
+                width: 50% !important;    
+                height: 100% !important;
+
+                p{
+                    margin: 0;
+                    padding: 0;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
     }
 
-    .video{    
+    .video{
         @include flex-box(column);
+        margin-bottom: 10px;
+        
+        width: 320px;
+        height: 220px;
 
-        width: 550px;
-        height: 350px;
+        video{
+            width: 320px;
+            height: 180px;
+        }
     }
 
     footer{
@@ -42,13 +68,40 @@
 
     .canchas{
         @include flex-box(column);
+
+        .ih-item{    
+            width: 350px;    
+            height: 200px;
+
+            .info{
+                @include flex-box(column);    
+
+                top:0 !important;
+                width: 50% !important;    
+                height: 100% !important;
+
+                p{
+                    margin: 0;
+                    padding: 0;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
     }
 
+    
     .video{
         @include flex-box(column);
+        margin-bottom: 10px;
         
-        width: 550px;
-        height: 350px;
+        width: 350px;
+        height: 250px;
+
+        video{
+            width: 350px;
+            height: 200px;
+        }
     }
 
     .images-galeria{
@@ -77,11 +130,33 @@
 
 @media (min-width: 768px) and (max-width: 1023px){    
     .iframes-index{
-        flex-direction: row;
+        @include flex-box(column);    
 
         iframe{
-            width: 400px;
-            height: 200px;    
+            width: 600px;
+            height: 350px;    
+        }
+    }
+
+    .canchas{
+        .ih-item{    
+            width: 320px;    
+            height: 200px;
+
+            .info{
+                @include flex-box(column);    
+
+                top:0 !important;
+                width: 50% !important;    
+                height: 100% !important;
+
+                p{
+                    margin: 0;
+                    padding: 0;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
         }
     }
 

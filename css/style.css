@@ -356,22 +356,45 @@ footer {
 
 @media (max-width: 400px) {
   .iframes-index {
-    flex-direction: column; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     .iframes-index iframe {
-      width: 220px;
-      height: 120px; }
+      width: 300px;
+      height: 150px; }
   .canchas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .canchas .ih-item, .canchas img, .canchas .images-galeria img, .images-galeria .canchas img {
+      width: 320px;
+      height: 180px; }
+      .canchas .ih-item .info, .canchas img .info, .canchas .images-galeria img .info, .images-galeria .canchas img .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0 !important;
+        width: 50% !important;
+        height: 100% !important; }
+        .canchas .ih-item .info p, .canchas img .info p, .canchas .images-galeria img .info p, .images-galeria .canchas img .info p {
+          margin: 0;
+          padding: 0;
+          justify-content: center;
+          align-items: center; }
   .video {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 550px;
-    height: 350px; }
+    margin-bottom: 10px;
+    width: 320px;
+    height: 220px; }
+    .video video {
+      width: 320px;
+      height: 180px; }
   footer .desafio {
     display: none; }
   footer span {
@@ -388,13 +411,33 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .canchas .ih-item, .canchas img, .canchas .images-galeria img, .images-galeria .canchas img {
+      width: 350px;
+      height: 200px; }
+      .canchas .ih-item .info, .canchas img .info, .canchas .images-galeria img .info, .images-galeria .canchas img .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0 !important;
+        width: 50% !important;
+        height: 100% !important; }
+        .canchas .ih-item .info p, .canchas img .info p, .canchas .images-galeria img .info p, .images-galeria .canchas img .info p {
+          margin: 0;
+          padding: 0;
+          justify-content: center;
+          align-items: center; }
   .video {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 550px;
-    height: 350px; }
+    margin-bottom: 10px;
+    width: 350px;
+    height: 250px; }
+    .video video {
+      width: 350px;
+      height: 200px; }
   .images-galeria {
     display: flex;
     flex-direction: column;
@@ -410,10 +453,29 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .iframes-index {
-    flex-direction: row; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     .iframes-index iframe {
-      width: 400px;
-      height: 200px; }
+      width: 600px;
+      height: 350px; }
+  .canchas .ih-item, .canchas img, .canchas .images-galeria img, .images-galeria .canchas img {
+    width: 320px;
+    height: 200px; }
+    .canchas .ih-item .info, .canchas img .info, .canchas .images-galeria img .info, .images-galeria .canchas img .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      top: 0 !important;
+      width: 50% !important;
+      height: 100% !important; }
+      .canchas .ih-item .info p, .canchas img .info p, .canchas .images-galeria img .info p, .images-galeria .canchas img .info p {
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center; }
   .pie-contacto .iframe-contacto iframe {
     width: 800px;
     height: 400px; } }

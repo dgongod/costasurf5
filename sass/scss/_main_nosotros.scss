@@ -38,7 +38,7 @@
 }
 
 .video{
-    @include flex-box(row);
+    @include flex-box(row);    
 
     p{
         margin-left: 0;
