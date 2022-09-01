@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+@import url("../../css/sweetalert2.min.css");
 * {
   margin: 0;
   padding: 0;
@@ -9,17 +10,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-image: linear-gradient(to top, #85f499, #5fc86a, #459f48, #328330, #287d1f);
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  background: url(../../images/fondo.png);
-  /* Nuestra textura */
-  background-repeat: repeat;
-  /* Indicamos que la textura se repetira */
-  background-attachment: fixed;
-  /* Establecemos una posicion fija para la textura */
-  background-size: cover;
-  opacity: 0.95;
-  /* Eliminamos la propiedad de background-size */ }
+  font-size: 16px; }
 
 a {
   text-decoration: none;
@@ -35,6 +28,28 @@ p {
   padding-bottom: 20px;
   border-bottom: 1px solid;
   border-color: black; }
+
+.swal2-confirm.swal2-styled {
+  background-color: #343434 !important; }
+  .swal2-confirm.swal2-styled:focus {
+    box-shadow: 0 0 0 2px rgba(222, 159, 58, 0.8) !important; }
+
+.swal2-popup {
+  background-color: #6c6c6c !important;
+  border: 1px solid white !important; }
+
+.swal2-title {
+  color: white !important; }
+
+.swal2-html-container {
+  color: white !important; }
+
+.swal2-image {
+  background-color: #343434 !important;
+  border-bottom-right-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+  border-width: 2px !important;
+  border: 1px solid white !important; }
 
 /*img{
     &:hover{
@@ -193,12 +208,6 @@ p {
     text-shadow: 0 0 8px white;
     font-style: italic; }
 
-/*.btn-toggler-exp {
-    &:hover{
-        animation: escalar 1s linear;
-        animation-iteration-count: 1;
-    }
-}*/
 .iframes-index {
   display: flex;
   flex-direction: row;
