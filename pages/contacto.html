@@ -95,26 +95,26 @@
     
     <main class="h-100 mb-3">    
         <section>                
-            <form class="container-md w-50" action="">
+            <form id="formulario" class="container-md w-50" action="">
                 <div class="row">
                     <div class="col-md-12 mt-2 text-white">Tu Nombre</div>
-                    <input class="col-md-12" type="text" name="nombre" id="nombre" placeholder="Ingrese el Nombre" required>
+                    <input class="col-md-12" type="text" name="nombre" id="nombre" placeholder="Ingrese el Nombre" >
                 </div>
 
                 <div class="row">
                     <div class="col-md-12 mt-2 text-white">Tu Email</div>
-                    <input class="col-md-12" type="text" name="email" id="email" placeholder="Ingrese el Email" required>
+                    <input class="col-md-12" type="text" name="email" id="email" placeholder="Ingrese el Email" >
                 </div>
 
                 <div class="row">
                     <div class="col-md-12 mt-2 text-white">Tu Consulta</div>
-                    <textarea class="col-md-12" name="consulta" rows="5" cols="50" id="consulta" placeholder="Ingrese la Consulta" required></textarea>
+                    <textarea class="col-md-12" name="consulta" rows="5" cols="50" id="consulta" placeholder="Ingrese la Consulta" ></textarea>
                 </div>
 
                 <div class="row">
                     <div class="botones">
-                        <button type="submit" class="btn btn-secondary">Enviar</button>
-                        <button type="reset" class="btn btn-secondary">Limpiar</button>
+                        <button id="cbtn-submit" type="submit" class="btn btn-secondary">Enviar</button>
+                        <button id="cbtn-reset" type="reset" class="btn btn-secondary">Limpiar</button>
                     </div>
                 </div>
             </form>            
@@ -136,7 +136,7 @@
     <footer>
         <section class="desafio">
             <img class="icon-footer color-invertido" src="../images/futbol-regular.png" alt="pelota de futbol">
-            <a href="#">Desafiamos tus habilidades</a>
+            <a href="https://poki.com/es/g/penalty-challenge" target="_blank">Desafiamos tus habilidades</a>
             <img class="icon-footer color-invertido" src="../images/gamepad-solid.png" alt="joystick">
         </section>
             
@@ -156,5 +156,7 @@
     </footer>
 
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="../js/contacto.js"></script>
 </body>
 </html>
