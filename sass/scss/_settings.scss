@@ -15,8 +15,31 @@ body{
     min-height: 100vh;
     background-image: linear-gradient(to top, #85f499, #5fc86a, #459f48, #328330, #287d1f);
 
+    //background-image: url('../../images/background-header.jpg');
+    //background-size: cover;
+    //background-attachment: fixed;
+
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+}
+
+.wsp{        
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+
+    z-index: 100;
+
+    img{
+        width: 50px;
+        height: 50px;
+        opacity: 0.5;
+
+        &:hover {
+            transform: scale(1.10);
+            opacity: 1;
+        }
+    }
 }
 
 a{
@@ -39,9 +62,16 @@ p{
 
 // personalización de estilo sweetalert2
 .swal2-confirm.swal2-styled{
-    background-color: $color-menu !important;
+    background-color: $color-hover-boton !important;
+    color: $color-menu !important;
+    font-weight: bold !important;
+
     &:focus{
         box-shadow: 0 0 0 2px $color-hover-boton !important;
+    }
+    &:hover{
+        background-color: $color-menu !important;
+        color: white !important;
     }
 }
 
@@ -65,11 +95,3 @@ p{
     border-width: 2px !important;
     border: 1px solid white !important;
 }
-
-/*img{
-    &:hover{
-        transform: scale(1.05);
-        transition: 0.5s;
-        cursor: pointer;
-    }
-}*/

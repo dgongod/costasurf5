@@ -11,11 +11,11 @@ function submit_limpieza_url () {
 function validarFormulario(evento) {
     evento.preventDefault();
 
-    var nombre = document.getElementById("nombre").value;
-    var email = document.getElementById("email").value;
-    var consulta = document.getElementById("consulta").value;
+    var nombre = document.getElementById("nombre");
+    var email = document.getElementById("email");
+    var consulta = document.getElementById("consulta");
 
-    if(nombre == "") {
+    if((nombre.value) == "") {
         Swal.fire({
             icon: 'error',
             title: 'Dato Requerido',
@@ -25,7 +25,7 @@ function validarFormulario(evento) {
         exit;
     }
     
-    if (email == "") {
+    if ((email.value) == "") {
         Swal.fire({
             icon: 'error',
             title: 'Dato Requerido',
@@ -35,7 +35,7 @@ function validarFormulario(evento) {
         exit;
     }
 
-    if (consulta== "") {
+    if ((consulta.value) == "") {
         Swal.fire({
             icon: 'error',
             title: 'Dato Requerido',
