@@ -459,7 +459,20 @@ footer {
     font-size: 12px; }
   .pie-contacto .iframe-contacto iframe {
     width: 300px;
-    height: 200px; } }
+    height: 200px; }
+  .swal2-popup {
+    transform: scale(0.8); }
+  .swal2-image {
+    transform: scale(0.8); }
+  @keyframes swal2-show {
+    0% {
+      transform: scale(0.6); }
+    45% {
+      transform: scale(1); }
+    80% {
+      transform: scale(0.7); }
+    100% {
+      transform: scale(0.8); } } }
 
 @media (min-width: 401px) and (max-width: 767px) {
   .iframes-index {
@@ -528,7 +541,20 @@ footer {
     object-fit: cover; }
   .pie-contacto .iframe-contacto iframe {
     width: 360px;
-    height: 300px; } }
+    height: 300px; }
+  .swal2-popup {
+    transform: scale(0.9); }
+  .swal2-image {
+    transform: scale(0.9); }
+  @keyframes swal2-show {
+    0% {
+      transform: scale(0.7); }
+    45% {
+      transform: scale(1); }
+    80% {
+      transform: scale(0.8); }
+    100% {
+      transform: scale(0.9); } } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .iframes-index {
