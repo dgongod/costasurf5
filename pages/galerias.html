@@ -95,10 +95,10 @@
     </nav>
     
     <main class="h-100 mt-3 mb-3">
-        <section class="images-galeria">
+        <section class="images-galeria">    
             <div class="row">
                 <div class="col-sm-6">
-                    <div id="g-img1" class="ih-item square effect6 from_top_and_bottom animate__animated animate__zoomIn">
+                    <div id="g-img1" class="ih-item square effect6 from_top_and_bottom animate__animated animate__zoomIn" data-bs-toggle="modal" data-bs-target="#instalaciones">
                         <a href="#">
                             <div class="img">
                                 <img class="animate__animated animate__zoomIn" src="../images/instalaciones.jpg" alt="Nuestras Instalaciones">
@@ -108,17 +108,69 @@
                                 <h3>Nuestras Instalaciones</h3>
                                 <p>Quincho, asador, baños, vestuario</p>
                             </div>
-                        </a>
+                        </a>                        
                     </div>
                 </div>
+
+                <!-- Modal -->
+                <div class="container-sm container-md container-lg">
+                    <div class="modal" id="instalaciones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Instalaciones</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+            
+                                <div class="modal-body">
+                                    <div id="carouselInstalaciones" class="carousel slide" data-bs-ride="carousel">                                    
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../images/galeria.jpg" class="d-block w-100" alt="galeria">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Galeria</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../images/asador.jpg" class="d-block w-100" alt="asador">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Asador</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../images/banios.jpg" class="d-block w-100" alt="baños">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Baños</h5>
+                                                </div>
+                                            </div>                                        
+                                        </div>
+
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselInstalaciones" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Anterior</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselInstalaciones" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Posterior</span>
+                                        </button>                                    
+                                    </div>                                
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- fin modal -->
             </div>
             
             <div class="row">
                 <div class="col-sm-6">
-                    <div id="g-img2" class="ih-item square effect6 from_top_and_bottom animate__animated animate__zoomIn">
+                    <div id="g-img2" class="ih-item square effect6 from_top_and_bottom animate__animated animate__zoomIn" data-bs-toggle="modal" data-bs-target="#escuelita">
                         <a href="#">
                             <div class="img">
-                                <img class="animate__animated animate__zoomIn" src="../images/escuelita.jpg" alt="Escuelita">
+                                <img class="animate__animated animate__zoomIn" src="../images/entrenando.jpg" alt="entrenando">
                             </div>
                             
                             <div class="info">
@@ -128,13 +180,65 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Modal -->
+                <div class="container-sm container-md container-lg">
+                    <div class="modal" id="escuelita" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Escuelita</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+            
+                                <div class="modal-body">
+                                    <div id="carouselEscuelita" class="carousel slide" data-bs-ride="carousel">                                    
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../images/entrenando.jpg" class="d-block w-100" alt="entrenando">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Entrenando</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../images/practica.jpg" class="d-block w-100" alt="practica">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Practica</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../images/profesor.jpg" class="d-block w-100" alt="profesor enseñando">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Profesor Enseñando</h5>
+                                                </div>
+                                            </div>                                        
+                                        </div>
+
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEscuelita" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Anterior</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselEscuelita" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Posterior</span>
+                                        </button>                                    
+                                    </div>                                
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- fin modal -->
             </div>
         </section>
 
         <section class="images-galeria">
             <div class="row">
                 <div class="col-sm-6">
-                    <div id="g-img3" class="ih-item square effect7 from_top_and_bottom animate__animated animate__zoomIn">
+                    <div id="g-img3" class="ih-item square effect7 from_top_and_bottom animate__animated animate__zoomIn" data-bs-toggle="modal" data-bs-target="#torneos">
                         <a href="#">
                             <div class="img">
                                 <img class="animate__animated animate__zoomIn" src="../images/torneos.jpg" alt="Torneos">
@@ -147,11 +251,63 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Modal -->
+                <div class="container-sm container-md container-lg">
+                    <div class="modal" id="torneos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Torneos</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+            
+                                <div class="modal-body">
+                                    <div id="carouselTorneos" class="carousel slide" data-bs-ride="carousel">                                    
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../images/torneos.jpg" class="d-block w-100" alt="preparandonos">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Preparandonos</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../images/torneos1.jpg" class="d-block w-100" alt="torneo">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Torneo</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../images/equipo.jpg" class="d-block w-100" alt="entrada en calor">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Entrada en calor</h5>
+                                                </div>
+                                            </div>                                        
+                                        </div>
+
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTorneos" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Anterior</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselTorneos" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Posterior</span>
+                                        </button>                                    
+                                    </div>                                
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- fin modal -->
             </div>
 
             <div class="row">
                 <div class="col-sm-6">
-                    <div id="g-img4" class="ih-item square effect7 from_top_and_bottom animate__animated animate__zoomIn">
+                    <div id="g-img4" class="ih-item square effect7 from_top_and_bottom animate__animated animate__zoomIn" data-bs-toggle="modal" data-bs-target="#eventos">
                         <a href="#">
                             <div class="img">
                                 <img class="animate__animated animate__zoomIn" src="../images/eventos.jpg" alt="Eventos">
@@ -164,6 +320,58 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Modal -->
+                <div class="container-sm container-md container-lg">
+                    <div class="modal" id="eventos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Eventos</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+            
+                                <div class="modal-body">
+                                    <div id="carouselEventos" class="carousel slide" data-bs-ride="carousel">                                    
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../images/eventos.jpg" class="d-block w-100" alt="cumpleaños">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Cumpleaños</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../images/reunionesamigos.jpg" class="d-block w-100" alt="reunionesamigos">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Reuniones con Amigos</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../images/festejos.jpg" class="d-block w-100" alt="festejos">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Festejos</h5>
+                                                </div>
+                                            </div>                                        
+                                        </div>
+
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEventos" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Anterior</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselEventos" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Posterior</span>
+                                        </button>                                    
+                                    </div>                                
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- fin modal -->
             </div>
         </section>                                
     </main>

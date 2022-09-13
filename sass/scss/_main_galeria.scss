@@ -10,7 +10,6 @@
         border-bottom-left-radius: 10px;
         border-top-right-radius: 10px;
         border-width: 2px;
-        //border: none;
 
         margin: 30px;
     
@@ -28,5 +27,72 @@
 
     p{
         border-bottom: none;
+    }
+
+    .modal-content{
+        background-color: $color-menu;
+        color: white;
+        border: 1px solid white;        
+    
+        .btn-close{
+            background-color: white;
+        }
+
+        .modal-header{                
+            border: none;
+            
+            .btn-close{
+                &:hover{
+                    background-color: $color-hover-boton;
+                }
+            }
+        }
+    
+        .modal-body{
+            padding-top: 0;
+            padding-bottom: 0;
+
+            .carousel-caption{
+                font-weight: bolder; 
+            }
+
+            img{
+                margin: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 0;
+                object-fit: cover;
+
+                &:hover{
+                    transform: none;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .modal-footer{                        
+            justify-content: center;
+            align-items: center;
+
+            padding: 0;
+            height: 60px;
+            border: none;
+
+            .btn{               
+                display: flex;
+                align-items: center; 
+
+                background-color: $color-hover-boton;
+                color: $color-menu;
+                font-weight: bold;
+                box-shadow: 0 0 0 2px $color-hover-boton;
+                border: none;
+                height: 30px;                
+
+                &:hover{
+                    background-color: $color-menu;
+                    color: white;
+                }
+            }
+        }
     }
 }

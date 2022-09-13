@@ -1,9 +1,6 @@
 const form = document.getElementById("formulario");
 
 function submit_limpieza_url () {
-    //const valores = window.location.search;
-    //const datos = new URLSearchParams(valores);
-
     form.submit();
     window.location.href =  window.location.href.split("?")[0];
 }
